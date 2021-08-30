@@ -1,18 +1,4 @@
 baseurl = "https://danielzamo.github.io/"
+languageCode = "es"
 title = "Mi blog estático"
-theme = "ghostwriter"
-
-[Params]
-    mainSections = ["post"]
-    intro = true
-    headline = "Artículos"
-    description = "Articulos publicados"
-    github = "https://github.com/danielzamo"
-    twitter = "https://twitter.com/daniel_zamo"
-    email = "daniel.oscar.zamo@gmail.com"
-    opengraph = true
-    shareTwitter = true
-    dateFormat = "Wen, Mar 3, 2021"
-    
-[Permalinks]
-    post = "/:filename/"
+theme = "ananke"
