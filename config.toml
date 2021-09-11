@@ -1,4 +1,4 @@
 baseurl = "https://danielzamo.github.io/"
-languageCode = "es"
-title = "Mi blog estático"
-theme = "ananke"
+languageCode = "en"
+title = "Sitio web c/Hugo"
+theme = "ghostwriter"
