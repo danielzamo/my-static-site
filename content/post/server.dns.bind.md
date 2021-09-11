@@ -8,6 +8,15 @@ author: "Daniel Oscar Zamo"
 > Este documento incluye la configuracion de:
 >
 > - Servidor DNS Bind sobre CentOS Stream 8 y derivados
+> - El despliegue incluye dos vistas (una es LAN interna y la otra una vista WAN)
+> - Se configuran las resoluciones directas e inversas
+>
+
+La representacion del despliegue se muestra en [esta captura][server.bind]
+
+![Arq. inicial - serv. DNS bind, c/2 vistas][server.bind]
+
+[server.bind]: /server.dns.bind.png "Arq. inicial - serv. DNS bind, c/2 vistas"
 
 # Instalación y configuración red interna (vista interna)
 
@@ -180,8 +189,7 @@ $TTL 86400
 #### Habilitar servicio DNS
 
 ```
-# Habilitar y comenzar Bind
-
+# Habilitar e iniciar Bind
 systemctl enable --now named
 
 ```
@@ -190,7 +198,6 @@ systemctl enable --now named
 
 ```
 # Habilitar el servicio DNS si firewalld esta activado
-
 firewall-cmd --add-service=dns --permanent
 firewall-cmd --reload
 ```
