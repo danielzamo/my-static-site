@@ -6,32 +6,35 @@ draft: false
 
 > Consulta recursiva
 
-![Rep. consulta recursiva][dns.recursiva]
+![Rep. consulta recursiva][dns.recursive]
 
-[dns.recursiva]:/images/dns.query.recursive.png "Representación consulta recursiva"
+[dns.recursive]:/images/dns.query.recursive.png "Representación consulta recursiva"
 
-> dig (a secas), realiza una consulta de los servidores NS raíz
+> El comando `dig` , realiza una consulta de los servidores raíz (server root)
 
 ```
 dig
 ```
 
-> dig google.com
+> ¿Cuáles son los servidores de nombres, responsables de los TLD (dominios de nivel superior) `.com`?
+> _Ejemplo los de_ `com`
 
 ```
-dig google.com
+dig @a.root-servers.net. com
 ```
 
-> ¿Cuáles son los servidores de nombres, responsables de los TLD (dominios de nivel superior)?
-> _Ejemplo los de_ `.com`
+> Consultar `axians.com` sobre uno de los TLD `com`
 
 ```
-dig NS com +short
+dig @e.gtld-servers.net. axians.com
 ```
 
 # Referencias
 
-- https://root-servers.org/ <--- servidores root
+- Servidores [root server][root.server]
+
+[root.server]: https://root-servers.org/ "servidores root server DNS"
+
 - https://eltallerdelbit.com/resolucion-dns-dig-linux/
 - https://blog.standalonecomplex.es/2010/05/16/guia-de-dig/
 - http://somebooks.es/comando-dig-ubuntu/
@@ -46,3 +49,4 @@ dig NS com +short
 - https://es.wikipedia.org/wiki/Sistema_de_nombres_de_dominio <--- tipos de registros DNS
 - https://stackoverflow.com/questions/706077/dns-how-to-dig-thru-the-right-domain-name-from-the-tld
 - https://www.youtube.com/watch?v=LqSqrtxrW7w&ab_channel=DefectoDigital   <--- buena explicacion de DNS
+- https://academy.bit2me.com/en/what-is-dns-server/
