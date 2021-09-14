@@ -1,4 +1,19 @@
 baseurl = "https://danielzamo.github.io/"
 languageCode = "en"
-title = "Sitio web c/Hugo"
+title = "Sitio web estatico"
 theme = "ghostwriter"
+
+[Params]
+ mainSections = ["post"]
+ intro = true
+ headline = "Algunos articulos"
+ description = "Sitio estático"
+ github = "https://github.com/danielzamo"
+ twitter = "https://twitter.com/danieloscarzamo"
+ email = "daniel.oscar.zamo@gmail.com"
+ opengraph = true
+ shareTwitter = true
+ dateFormat = "Mon, Jan 2, 2006"
+
+[Permalinks]
+ post = "/:filename/"

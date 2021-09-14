@@ -9,7 +9,7 @@ author = "Daniel Oscar Zamo"
 
 ![Representación consulta recursiva][query.recursive]
 
-[query.recursive]: /NOMBRE.png "Representación consulta recursiva"
+[query.recursive]: /images/dns.query.recursive.png "Representación consulta recursiva"
 
 > dig (a secas), realiza una consulta de los servidores NS raíz
 
