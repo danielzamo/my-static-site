@@ -1,4 +1,0 @@
-baseurl = "https://danielzamo.github.io/"
-languageCode = "en"
-title = "Sitio web c/Hugo"
-theme = "ghostwriter"
