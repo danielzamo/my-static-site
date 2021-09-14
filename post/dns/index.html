@@ -5,10 +5,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Dns &middot; </title>
         <meta name="description" content="Consulta recursiva
-  dig (a secas), realiza una consulta de los servidores NS raíz
- dig  ¿Cuáles son los servidores de nombres, responsables de los TLD (dominios de nivel superior)? Ejemplo los de .com
- dig NS com &#43;short  dig google.com
- dig google.com Referencias  Servidores root server   https://eltallerdelbit.com/resolucion-dns-dig-linux/ https://blog.standalonecomplex.es/2010/05/16/guia-de-dig/ http://somebooks.es/comando-dig-ubuntu/ https://rm-rf.es/como-usar-el-comando-dig-ejemplos/ https://www.hostinger.es/tutoriales/comando-dig-linux https://www.administracionderedes.com/consulta-iterativa-recursiva/ https://www.ibm.com/docs/en/zos/2.2.0?topic=uzudc-dig-command-query-name-servers https://learn.akamai.com/en-us/webhelp/pulsar-diagnostic-tools/pulsar-diagnostic-tools/GUID-80B4B9A1-16B2-4D70-8100-7B2617102002.html https://www.youtube.com/watch?v=sUhEqT_HSBI&amp;ab_channel=ProfeSang &lt;&mdash; Video explicado simple y bien https://www.">
+  El comando dig , realiza una consulta de los servidores raíz (server root)
+ dig  ¿Cuáles son los servidores de nombres, responsables de los TLD (dominios de nivel superior) .com? Ejemplo los de com
+ dig @a.root-servers.net. com  Consultar axians.com sobre uno de los TLD com
+ dig @e.gtld-servers.net. axians.com Referencias  Servidores root server   https://eltallerdelbit.com/resolucion-dns-dig-linux/ https://blog.standalonecomplex.es/2010/05/16/guia-de-dig/ http://somebooks.es/comando-dig-ubuntu/ https://rm-rf.es/como-usar-el-comando-dig-ejemplos/ https://www.hostinger.es/tutoriales/comando-dig-linux https://www.administracionderedes.com/consulta-iterativa-recursiva/ https://www.">
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
         <meta name="generator" content="Hugo 0.68.3" />
@@ -89,20 +89,20 @@
     <blockquote>
 <p>Consulta recursiva</p>
 </blockquote>
-<p><img src="/images/dns.query.recursiva.png" alt="Rep. consulta recursiva" title="Representación consulta recursiva"></p>
+<p><img src="/images/dns.query.recursive.png" alt="Rep. consulta recursiva" title="Representación consulta recursiva"></p>
 <blockquote>
-<p>dig (a secas), realiza una consulta de los servidores NS raíz</p>
+<p>El comando <code>dig</code> , realiza una consulta de los servidores raíz (server root)</p>
 </blockquote>
 <pre><code>dig
 </code></pre><blockquote>
-<p>¿Cuáles son los servidores de nombres, responsables de los TLD (dominios de nivel superior)?
-<em>Ejemplo los de</em> <code>.com</code></p>
+<p>¿Cuáles son los servidores de nombres, responsables de los TLD (dominios de nivel superior) <code>.com</code>?
+<em>Ejemplo los de</em> <code>com</code></p>
 </blockquote>
-<pre><code>dig NS com +short
+<pre><code>dig @a.root-servers.net. com
 </code></pre><blockquote>
-<p>dig google.com</p>
+<p>Consultar <code>axians.com</code> sobre uno de los TLD <code>com</code></p>
 </blockquote>
-<pre><code>dig google.com
+<pre><code>dig @e.gtld-servers.net. axians.com
 </code></pre><h1 id="referencias">Referencias</h1>
 <ul>
 <li>Servidores <a href="https://root-servers.org/" title="servidores root server DNS">root server</a></li>
