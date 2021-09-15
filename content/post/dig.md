@@ -1,13 +1,13 @@
 +++
-title = "DNS y comando dig"
-description = "DNS y comando dig"
+title = "Comando dig"
+description = "Comando dig"
 date = "2021-09-14"
 author = "Daniel Oscar Zamo"
 +++
 
 # Utilidad `dig`
 
-## 
+## Busqueda desde un server-root
 La siguiente secuencia de comandos, es por simular una busqueda recursiva de un autoritativo de zona. En particular un registro de tipo **A** `www.axians.com`. Es basicamente una busqueda completa que realiza un cache DNS, si ha dicho registro, no lo tiene almacenado previamente.
 Lo interesante a observar aqui, es:
 
