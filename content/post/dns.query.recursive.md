@@ -1,6 +1,6 @@
 +++
 title = "DNS - consulta recursiva"
-description = "DNS y comando dig"
+description = "DNS - consulta recursiva"
 date = "2021-09-14"
 author = "Daniel Oscar Zamo"
 +++
