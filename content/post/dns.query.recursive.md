@@ -1,5 +1,5 @@
 +++
-title = "DNS y comando dig"
+title = "DNS - consulta recursiva"
 description = "DNS y comando dig"
 date = "2021-09-14"
 author = "Daniel Oscar Zamo"
@@ -11,7 +11,7 @@ author = "Daniel Oscar Zamo"
 
 [query.recursive]: /images/dns.query.recursive.png "Representación consulta recursiva"
 
-En la [figura][query.recursiva.numerate].
+En la [figura][query.recursive.numerate].
 
 ![Representación de query DNS recursiva, numerada][query.recursive.numerate]
 
