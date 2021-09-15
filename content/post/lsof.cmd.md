@@ -4,13 +4,11 @@ date: 2021-09-15T22:34:53+02:00
 draft: false
 ---
 
-How to list all open files
-To list all open files, run the lsof command without any arguments:
-lsof
-
 # Listar todos los archivos abiertos
 
 Para listar todos los archivos abiertos, ejecutar `lsof` sin argumentos
+
+> _Warn:_ La salida puede tardar y/o ser muy extensa. Recordemos que en un sistema basado en Uni**X** (como lo es Linux) todos los elementos son ficheros.
 
 ```
 lsof
