@@ -3,21 +3,6 @@ languageCode = "es"
 title = "Sitio web estatico"
 theme = "ghostwriter"
 
-
-#[menu]
-#[[menu.main]]
-#  identifier = 'dns.query.recursive'
-#  name = 'Answer dns recursiva'
-#  pre = "<i class='fa fa-heart'></i>"
-#  url = '/dns.query.recursive/'
-#  weight = -110
-#[[menu.main]]
-#  name = 'dig'
-#  post = "<span class='alert'>New!</span>"
-#  pre = "<i class='fa fa-road'></i>"
-#  url = '/dig/'
-#  weight = -100
-
 [Params]
  mainSections = ["post"]
  intro = true
